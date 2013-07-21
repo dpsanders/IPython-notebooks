@@ -62,6 +62,7 @@ print settings['font.size']
 # <codecell>
 
 %matplotlib inline
+%config InlineBackend.figure_format = "svg"
 
 # <markdowncell>
 
