@@ -30,11 +30,10 @@ gist_url = subprocess.check_output(command)
 print "New gist located at:"
 print gist_url
 
+basename, extension = os.path.splitext(notebook_file)
+#print "Extension ", extension
 
-file_extension = os.path.splitext(filename)[1]	
-#print "Extension ", file_extension
-
-is_IPython_notebook = (file_extension == ".ipynb")
+is_IPython_notebook = (extension == ".ipynb")
 
 if (is_IPython_notebook):
 	gist_url_parts = os.path.split(gist_url)
