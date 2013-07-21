@@ -35,17 +35,15 @@ command = ['mv', 'nbconvert_build/%s' % script_name, '.']
 print command
 subprocess.check_call(command)
 
-# It fails to strip out the IPython magics
-# Get rid of them:
-# [Would be easier to use awk for this:
 
-# awk 'substr($0,1,1) != "%"' 
+# It fails to strip out the IPython magics so we must get rid of them
+# Equivalent to:  awk 'substr($0,1,1) != "%"' notebook.py > notebook.py
 
 script_contents = open(script_name, "r").readlines()
 lines = [line for line in script_contents if line[0] != "%"]
 script_contents = ''.join(lines)
 
-print script_contents
+#print script_contents
 
 # Output the script back into the same file:
 
@@ -54,9 +52,7 @@ output.write(script_contents)
 
 # Run the resulting Python script:
 
-command = ['ipython', 'script_name']
-
-
+#command = ['python', 'script_name']
 execfile(script_name)
 				
 
