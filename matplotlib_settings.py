@@ -3,7 +3,7 @@
 
 # <headingcell level=1>
 
-# Interrogating and modifying matplotlib parameter settings via matplotlib.mpl_params
+# Interrogating and modifying matplotlib parameter settings via matplotlib.settings
 
 # <markdowncell>
 
@@ -11,46 +11,46 @@
 
 # <headingcell level=2>
 
-# The `mpl_params` data structure for parameter settings
+# The `settings` data structure for parameter settings
 
 # <markdowncell>
 
-#  The configuration is done via parameter settings stored in a data
-# structure called `mpl_params`. This lives inside the `matplotlib` namespace, 
+# The configuration is done via parameter settings stored in a data
+# structure called `settings`. This lives inside the `matplotlib` namespace, 
 # so we can import it using:
 
 # <codecell>
 
 from matplotlib import rcParams
-mpl_params = rcParams
+settings = rcParams
 
 # <markdowncell>
 
-# In future versions of `matplotlib`, we will be able to use simply
+# [In future versions of `matplotlib`, we will be able to use simply
 # 
-#     from matplotlib import mpl_params
+#     from matplotlib import settings
 #     
-# but at the moment we must rather create the name `mpl_params` as an alias of the current name `rcParams` for the structure
+# but at the moment we must rather create the name `settings` as an alias of the current name `rcParams` for the structure.]
 
 # <markdowncell>
 
-# `mpl_params` behaves like a dictionary, i.e. it is a collection of key-value pairs. But it also has *validation*,
+# `settings` behaves like a dictionary, i.e. it is a collection of key-value pairs. But it also has *validation*,
 # which means that the possible values associated to a given key may be restricted to a certain set.
 # 
-# For a key `key`, querying `mpl_params[key]` returns the current value associated to the key `key`, while
+# For a key `key`, querying `settings[key]` returns the current value associated to the key `key`, while
 # 
-#     mpl_params[key] = value
+#     settings[key] = value
 #     
 # associates the new value `value` to the key `key`. For example:
 
 # <codecell>
 
-print mpl_params['font.size']
+print settings['font.size']
 
 # <codecell>
 
-mpl_params['font.size'] = 20
-print mpl_params['font.size']
+settings['font.size'] = 20
+print settings['font.size']
 
 # <headingcell level=2>
 
@@ -95,7 +95,7 @@ simple_plot()  # with default values since we have not changed anything yet
 
 # <codecell>
 
-mpl_params['font.size'] = 20
+settings['font.size'] = 20
 simple_plot()  # rerun the plot, now with the new font size
 
 # <markdowncell>
@@ -112,7 +112,7 @@ simple_plot()  # rerun the plot, now with the new font size
 
 # <codecell>
 
-print mpl_params
+print settings
 
 # <markdowncell>
 
@@ -125,7 +125,7 @@ def get_keys_containing(word):
     Returns those keys in `mpl_params` which contain the string `word`.
     '''
     
-    keys = [k for k in mpl_params.keys() if word in k]
+    keys = [k for k in settings.keys() if word in k]
     return keys
 
 
@@ -140,7 +140,7 @@ def format_key_value_pairs(word):
     
     for item in keys:
         key = "'{}'".format(item)
-        value = mpl_params[item]
+        value = settings[item]
     
         pair = ("{:>40}:{}".format(key, value))
         
