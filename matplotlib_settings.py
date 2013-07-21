@@ -3,7 +3,7 @@
 
 # <headingcell level=1>
 
-# Modifying matplotlib settings: the matplotlib.settings dictionary
+# Playing with styling in matplotlib: `matplotlib.settings`
 
 # <markdowncell>
 
@@ -21,8 +21,7 @@
 
 # <codecell>
 
-from matplotlib import rcParams
-settings = rcParams
+from matplotlib import rcParams as settings
 
 # <markdowncell>
 
@@ -30,7 +29,7 @@ settings = rcParams
 # 
 #     from matplotlib import settings
 #     
-# but at the moment we must rather create the name `settings` as an alias of the current name `rcParams` for the structure.]
+# but at the moment we must instead create the name `settings` as an alias of the current name `rcParams` for the structure.]
 
 # <markdowncell>
 
