@@ -3,7 +3,7 @@
 
 # <headingcell level=1>
 
-# Interrogating and modifying matplotlib parameter settings via matplotlib.settings
+# Modifying matplotlib settings: the matplotlib.settings dictionary
 
 # <markdowncell>
 
