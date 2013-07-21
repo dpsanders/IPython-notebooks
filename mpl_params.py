@@ -73,9 +73,6 @@ print mpl_params['font.size']
 from matplotlib import pyplot as plt
 import numpy as np
 
-from matplotlib import rcParams
-mpl_params = rcParams
-
 # <markdowncell>
 
 # Since we will be repeating the same operation, instead of duplicating the code, it is cleaner to create a function to do the plotting:
