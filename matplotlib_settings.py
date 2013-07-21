@@ -150,12 +150,12 @@ def format_key_value_pairs(word):
 
 # <codecell>
 
-print "Here are the key-value pairs whose key contains the string 'font':"
+print "Here are the key-value pairs whose key contains the string 'font': \n"
 
 font_keys = format_key_value_pairs("font")
 print font_keys
 
-print "\nAnd here are those containing the string 'ed': "
+print "\nAnd here are those containing the string 'ed': \n"
 
 edge_keys = format_key_value_pairs("ed")
 print edge_keys
