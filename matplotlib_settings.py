@@ -150,10 +150,19 @@ def format_key_value_pairs(word):
 
 # <codecell>
 
-font_keys = format_key_value_pairs("font")
-edge_keys = format_key_value_pairs("edge")
+print "Here are the key-value pairs whose key contains the string 'font':"
 
-print font_keys, edge_keys
+font_keys = format_key_value_pairs("font")
+print font_keys
+
+print "\nAnd here are those containing the string 'ed': "
+
+edge_keys = format_key_value_pairs("ed")
+print edge_keys
+
+# <markdowncell>
+
+# We can see that there are keys to do with edges, but also others which happen to contain the string 'ed' (including a deprecated one, which is what is generating the warning).
 
 # <headingcell level=2>
 
