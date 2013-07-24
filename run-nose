@@ -1,0 +1,1 @@
+strip_magics Arnold_cat_map.py && nosetests Arnold_cat_map.py
