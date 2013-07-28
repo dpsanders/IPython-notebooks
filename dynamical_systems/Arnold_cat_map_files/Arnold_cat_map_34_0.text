@@ -1,0 +1,1 @@
+[DirectedLineSegment([0, 0], [1, 0]), DirectedLineSegment([1, 0], [1, 1]), DirectedLineSegment([1, 1], [0, 1]), DirectedLineSegment([0, 1], [0, 0])]

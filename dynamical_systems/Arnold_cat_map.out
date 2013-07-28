@@ -1,0 +1,7 @@
+\BOOKMARK [0][-]{part.1}{I\040Calculating\040and\040visualising\040the\040Arnold\040cat\040map}{}% 1
+\BOOKMARK [1][-]{section.1}{Simple\040computational\040geometry}{part.1}% 2
+\BOOKMARK [2][-]{subsection.1.1}{Line\040segments}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.2}{Polygons}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Mapping\040vertices\040and\040polygons}{part.1}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Interpolating\040the\040Arnold\040cat\040map}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Correct\040attempt}{section.2}% 7

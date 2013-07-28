@@ -1,0 +1,1 @@
+cp <any_png> $(ipython locate profile)/static/base/ipynblogo.png

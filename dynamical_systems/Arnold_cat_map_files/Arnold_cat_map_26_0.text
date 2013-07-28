@@ -1,0 +1,6 @@
+/Users/dsanders/development/matplotlib/lib/matplotlib/__init__.py:934: UserWarning: Bad val "%(backend)s" on line #32
+	"backend      : %(backend)s
+"
+	in file "/Users/dsanders/Dropbox/ipynb/matplotlibrc"
+	Unrecognized backend string "%(backend)s": valid strings are ['pdf', 'pgf', 'Qt4Agg', 'GTK', 'GTKAgg', 'ps', 'agg', 'cairo', 'MacOSX', 'GTKCairo', 'WXAgg', 'template', 'TkAgg', 'GTK3Cairo', 'GTK3Agg', 'svg', 'WebAgg', 'CocoaAgg', 'emf', 'gdk', 'WX']
+  (val, error_details, msg))
